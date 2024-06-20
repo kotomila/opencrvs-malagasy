@@ -106,7 +106,7 @@ jobs:
           external_backup_server_ssh_port: 22
           external_backup_server_ip: ${{ secrets.BACKUP_HOST }}
           manager_production_server_ip: ${{ secrets.SSH_HOST }}
-          ansible_user: provision
+          ansible_user: ${{ secrets.SSH_USER }}
 
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2.8.0

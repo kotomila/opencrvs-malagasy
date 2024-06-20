@@ -24,6 +24,7 @@ docker-manager-first:
       ansible_port: 13021
       ansible_user: provision
       ansible_ssh_private_key_file: ~/.ssh/id_rsa
+      ansible_ssh_common_args: '-o UserKnownHostsFile=~/.ssh/known_hosts'
       data_label: data1 # for manager machines, this should always be "data1"
 
 # Development servers are not configured to use workers.
