@@ -114,6 +114,8 @@ jobs:
           ANSIBLE_PERSISTENT_COMMAND_TIMEOUT: 10
           ANSIBLE_SSH_TIMEOUT: 10
           ANSIBLE_SSH_RETRIES: 5
+          ANSIBLE_SSH_USER: provision
+          ANSIBLE_SSH_PORT: 13021
         with:
           playbook: playbook.yml
           directory: ${{ github.event.repository.name }}/infrastructure/server-setup
