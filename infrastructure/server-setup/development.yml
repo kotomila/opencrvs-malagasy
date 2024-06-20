@@ -21,8 +21,8 @@ docker-manager-first:
   hosts:
     siecm-latest: # @todo set this to be the hostname of your target server
       ansible_host: '102.16.26.25' # @todo set this to be the IP address of your server
-      ansible_port: 13021
-      ansible_user: provision
+      ansible_port: '13021'
+      ansible_user: 'provision'
       ansible_ssh_private_key_file: ~/.ssh/id_rsa
       ansible_ssh_common_args: '-o UserKnownHostsFile=~/.ssh/known_hosts'
       data_label: data1 # for manager machines, this should always be "data1"
